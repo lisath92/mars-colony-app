@@ -1,0 +1,68 @@
+body {
+  background:
+  linear-gradient(to top left, #451804, #c1440e);
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: column nowrap;
+  align-items: center;
+  color: #fff;
+
+
+  h1{
+    margin: 20px;
+  }
+}
+
+form {
+  display: flex;
+  align-content: center;
+  flex-flow: column wrap;
+  width: 100%;
+
+  label{
+    margin: 20px 30px 30px;
+
+  }
+
+  select,
+  input {
+    text-indent: 10px;
+    color:  #fff;
+    background-color: transparent;
+    font-size: 25px;
+    border: 0;
+    border-bottom: 2px #f0e7e7 solid;
+  }
+
+  input {
+   width: 100%;
+
+     &::-webkit-input-placeholder{
+      color: #fff;
+    }
+  }
+
+  select {
+    -webkit-appearance: none;
+    margin: 20px 30px 30px;
+
+  }
+
+  option {
+    color: #451804;
+  }
+}
+
+.check-in {
+  margin-top: 80px;
+
+  button {
+    border: none;
+    font-size: 25px; 
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+  }
+}
