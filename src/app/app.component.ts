@@ -19,8 +19,8 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
 
 })
 export class AppComponent {
-  colonist: Colonist;
-  encounter: Encounter;
+  // colonist: Colonist;
+  // encounter: Encounter;
 
   title = 'Mars Colony 1';
   constructor( alienService: AlienService, 
@@ -28,22 +28,22 @@ export class AppComponent {
     encounterService: EncounterService, 
     colonistService: ColonistService){
 
-    console.log(alienService);
-    console.log(occupationService);
-    console.log(encounterService);
+    // console.log(alienService);
+    // console.log(occupationService);
+    // console.log(encounterService);
 
-    this.encounter = new Encounter('557','Endomorph','eat eat eat','');
-    encounterService.addEncounters({encounter: this.encounter})
-    .then(encounter => {
-      console.log(encounter);
-    });
+    // this.encounter = new Encounter('557','Endomorph','eat eat eat','');
+    // encounterService.addEncounters({encounter: this.encounter})
+    // .then(encounter => {
+    //   console.log(encounter);
+    // });
 
-    this.colonist = new Colonist('Mark', '3', '45');
+    // this.colonist = new Colonist('Mark', '3', '45');
 
-    colonistService.newColonist(this.colonist)
-    .then(colonist => {
-      console.log(colonist);
-    });
+    // colonistService.newColonist(this.colonist)
+    // .then(colonist => {
+    //   console.log(colonist);
+    // });
 
   };
 }

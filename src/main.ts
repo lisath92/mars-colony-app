@@ -10,11 +10,14 @@ import { HomeComponent } from './app/home';
 import { ArrivalComponent } from './app/arrival';
 import { EncountersComponent } from './app/encounters';
 import { ReportComponent } from './app/report';
+import { FormsModule } from '@angular/forms'
+
 
 @NgModule({
   imports: [
     BrowserModule,
-    routing
+    routing,
+    FormsModule
   ],
 
   providers: [
