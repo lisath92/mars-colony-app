@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
   providers: [OccupationService, ColonistService]
 
 })
-export class ArrivalComponent implements OnInit {
+export class ArrivalComponent {
 
   NO_OCCUPATION_SELECTED = '(none)';
 
@@ -29,7 +29,14 @@ export class ArrivalComponent implements OnInit {
     
   }
 
-    ngOnInit() {
-    }
+ get noOccupation(){
+     return this.colonist.job_id === this.NO_OCCUPATION_SELECTED;
+   }
+
+   onSubmit() {
+     this.colonistService.newColonist(this.colonist)
+     .then(colonist => {this.router.navigate(['/encounters']);
+   });
+   }
 
   }

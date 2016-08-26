@@ -8,17 +8,19 @@
   <section class="title">
     <h1>Register</h1>
   </section>
-  <form>
-    <label><input type="text" placeholder="Name"></label>
-    <label><input type="number" placeholder="Age"></label>
-    <select required>
-      <option value="occupation">Select occupation</option>
-      <option value="alien-hunter">Alien hunter</option>
+  <form (ngSubmit)="onSubmit()" #arrivalForm="ngForm" name="arrivalForm">
+    <label><input [(ngModel)]="colonist.name" name="name" type="text" placeholder="Name" required></label>
+    <label><input [(ngModel)]="colonist.age" name="age" type="number" placeholder="Age" required></label>
+    <select [(ngModel)]="colonist.job_id" name="job_id" required>
+      <option value="(none)">Select occupation</option>
+      <option *ngFor="let job of occupations" [value]="job.id">{{job.name}}</option>
     </select>
-  </form>
+  
   <section class="check-in">
-    <button>Check In</button>
+    <button [disabled]="noOccupation || !arrivalForm.form.valid" type="submit">Check in to the Colony</button>
+
   </section>
+  </form>
 
 
 </body>
