@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Check In</title>
-</head>
-<body class="arrival-container">
+
+<main class="arrival">
   <section class="title">
     <h1>Register</h1>
   </section>
@@ -15,10 +10,14 @@
       <option value="(none)">Select occupation</option>
       <option *ngFor="let job of occupations" [value]="job.id">{{job.name}}</option>
     </select>
-  
-    <button [disabled]="noOccupation || !arrivalForm.form.valid" type="submit">Check in to the Colony</button>
+    <div class="arrival-check-in">
+      <div class="arrival-img">
+        <img src="http://cliparts.co/cliparts/6Tr/ydR/6TrydR8TK.png" alt="cute green alien">
+      </div>
+      <button [disabled]="noOccupation || !arrivalForm.form.valid" type="submit">Check in to the Colony</button>
+    </div>
   </form>
 
+  {{errorMessage}}
 
-</body>
-</html>
+</main>

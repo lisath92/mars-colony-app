@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title></title>
-</head>
-<body>
+<!-- This is view to report an encounter -->
+
+<main class="report">
   <section class="title">
   <div class="subtitle">
     <h1>Report Encounter</h1>
@@ -15,16 +11,15 @@
     </div>
   </section>
   <section class="report-encounter">
-    <form class="encounter-form">
-      <select>
-        <option value="select-alien">Select an alien type</option>
-        <option value="endomorph">Endomorph</option>
-        <option value="Mark">Mark</option>
-        <option value="Mac">Mac</option>
+    <form class="encounter-form" name="reportForm" (ngSubmit)="onSubmit()" #reportForm="ngForm">
+      <select required [(ngModel)]="encounter.atype" name="atype">
+        <option value="(none)">Select an alien type</option>
+        <option *ngFor="let alien of aliens" [value]="alien.type" >{{alien.type}}</option>
       </select>
-      <textarea col="200px" placeholder="Action taken"></textarea>
-      <button type="submit">Submit Report</button>
+      <textarea col="200px" placeholder="Action taken" required [(ngModel)]="encounter.action" name="action"></textarea>
+      <button [disabled]="!reportForm.form.valid" type="submit">Submit Report</button>
     </form>
   </section>
-</body>
-</html>
+
+  {{errorMessage}}
+</main>

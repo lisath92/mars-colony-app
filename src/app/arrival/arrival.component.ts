@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { Colonist, IOccupation } from '../models';
 import { ColonistService } from '../shared/services/colonist-services';
 import { OccupationService } from '../shared/services/occupation-services';
@@ -15,7 +15,8 @@ import { Router } from '@angular/router';
 export class ArrivalComponent {
 
   NO_OCCUPATION_SELECTED = '(none)';
-
+  
+  private errorMessage: string;
   public occupations: IOccupation[];
   public colonist: Colonist;
 
@@ -24,19 +25,24 @@ export class ArrivalComponent {
     private colonistService: ColonistService,
     private occupationService: OccupationService) 
   {
-    this.colonist = new Colonist('', this.NO_OCCUPATION_SELECTED, '');
+    this.errorMessage='';
+    this.colonist = new Colonist('', this.NO_OCCUPATION_SELECTED, '', '');
     occupationService.getOccupations().then(jobs =>this.occupations =jobs);
     
   }
 
- get noOccupation(){
-     return this.colonist.job_id === this.NO_OCCUPATION_SELECTED;
-   }
-
-   onSubmit() {
-     this.colonistService.newColonist(this.colonist)
-     .then(colonist => {this.router.navigate(['/encounters']);
-   });
-   }
-
+  get noOccupation(){
+    return this.colonist.job_id === this.NO_OCCUPATION_SELECTED;
   }
+
+  onSubmit() {
+    this.colonistService.newColonist(this.colonist)
+    .then(colonist => {
+      sessionStorage.setItem('colonist', colonist.id);
+      this.router.navigate(['/encounters']);
+    }).catch(error =>{
+      this.errorMessage="Oops, something went wrong! ";
+    });
+  }
+
+}

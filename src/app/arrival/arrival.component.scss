@@ -1,4 +1,4 @@
-body {
+.arrival {
   background:
   linear-gradient(to top left, #451804, #c1440e);
   width: 100%;
@@ -31,15 +31,26 @@ form {
     text-indent: 10px;
     color:  #fff;
     background-color: transparent;
-    font-size: 25px;
+    font-size: 23px;
     border: 0;
     border-bottom: 2px #f0e7e7 solid;
+    padding: 10px;
+
+    &:focus {
+      border-color: green;
+    }
   }
 
   input {
    width: 100%;
+   transition: all 0.5s ease-in-out;
 
-     &::-webkit-input-placeholder{
+    &:hover{
+      padding: 15px;
+      letter-spacing: 5px;
+    }
+
+    &::-webkit-input-placeholder{
       color: #fff;
     }
   }
@@ -53,15 +64,52 @@ form {
   option {
     color: #451804;
   }
-  
+
+  .arrival-check-in {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .arrival-img{
+    width: 150px;
+    height: 200px;
+    transition: all 1s ease-in-out;
+    &:hover{
+      transform: rotateY(360deg);
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
   button {
+    align-self: flex-start;
     margin-top: 80px;
     border: none;
     font-size: 25px; 
     background-color: transparent;
     color: #fff;
     cursor: pointer;
+    transition: all 1s ease-in-out;
+
+    &:hover {
+      color: aquamarine;
+      font-size: 28px;
+      letter-spacing: 5px;
+    }
   }
 }
 
+.ng-invalid {
+  animation: blinking 0.5s 2 linear;
+
+}
+
+
+@keyframes blinking {
+  50% {
+    border: 3px red solid;
+  }
+}
 

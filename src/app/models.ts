@@ -8,7 +8,8 @@ export class Colonist{
   constructor(
     public name: string,
     public job_id: string,
-    public age: string
+    public age: string,
+    public id: string
   ){}
 }
 
@@ -28,6 +29,6 @@ export class Encounter{
 
     get formatDate(): string {
       let date = new Date();
-      return `${date.getFullYear()}-${date.getMonth()}-${date.getDate()}`;
+      return `${date.getFullYear()}-${date.getMonth()+1}-${date.getDate()}`;
   }
 }
