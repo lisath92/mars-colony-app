@@ -17,7 +17,7 @@
         <option *ngFor="let alien of aliens" [value]="alien.type" >{{alien.type}}</option>
       </select>
       <textarea col="200px" placeholder="Action taken" required [(ngModel)]="encounter.action" name="action"></textarea>
-      <button [disabled]="!reportForm.form.valid" type="submit">Submit Report</button>
+      <button [disabled]="noAlienSelected || !reportForm.form.valid" type="submit">Submit Report</button>
     </form>
   </section>
 

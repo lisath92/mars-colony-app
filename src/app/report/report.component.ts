@@ -44,5 +44,10 @@ export class ReportComponent {
     this.errorMessage="Oops, something went wrong!";
 
   });
+
+  
 }
+get noAlienSelected(){
+    return this.encounter.atype===this.NO_ALIEN_SELECTED;
+  }
 }
