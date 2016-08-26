@@ -1,0 +1,62 @@
+.encounters {
+  background:
+ linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+  linear-gradient(to bottom right, #931621, #3B0D11, #912F56);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: column nowrap;
+  font-weight: normal;
+  height: 100vh;
+  
+
+  h1,
+  h3{
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+.encounter-reports{
+  width: 90vw;
+  height: 50vh;
+  overflow: scroll;
+  margin: 30px;
+  margin-left:0;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.date-alien {
+  color: darkorange;
+  
+}
+
+.action {
+  color: bisque;
+}
+
+.list-reports{
+  margin: 20px 30px;
+}
+
+.report-button button{
+  border: 5px darkorange solid;
+  border-radius: 10px;
+  background-color:lighten(#931621, 10%);
+  width: 70vw;
+  height: 20vh;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 30px;
+  transition: all 1s ease-in-out;
+
+  &:hover {
+    color: aquamarine;
+    letter-spacing: 5px;
+    font-size: 25px;
+    border-color: green;
+  }
+
+}

@@ -7,11 +7,16 @@
   align-items: center;
   flex-flow: column nowrap;
   font-weight: normal;
-  height: 90vh;
+  height: 100vh;
 
   h1,
   h3 {
     margin-top: 20px;
+    font-size: 20px;
+  }
+
+  h3{
+    color: lighten(#931621, 40%);
   }
 }
 
@@ -71,19 +76,32 @@
     border: none;
     padding: 10px;
     margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 15px;
 
     &::-webkit-input-placeholder{
       color: #451804;
     }
   }
 
-  button {
-      border: none;
-      background-color: transparent;
-      font-size: 25px;
-      color: #fff;
-      cursor: pointer;
+  button{
+    border: 5px darkorange solid;
+    border-radius: 10px;
+    background-color:lighten(#931621, 10%);
+    width: 90vw;
+    height: 20vh;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 30px;
+    transition: all 1s ease-in-out;
 
-
+    &:hover {
+      color: aquamarine;
+      border-radius: 10px;
+      letter-spacing: 5px;
+      font-size: 30px;
+      border-color: green;
+    }
   }
 }

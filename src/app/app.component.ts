@@ -18,32 +18,9 @@ import { ROUTER_DIRECTIVES } from '@angular/router';
   directives: [ROUTER_DIRECTIVES],
 
 })
+
 export class AppComponent {
-  // colonist: Colonist;
-  // encounter: Encounter;
 
   title = 'Mars Colony 1';
-  constructor( alienService: AlienService, 
-    occupationService: OccupationService,
-    encounterService: EncounterService, 
-    colonistService: ColonistService){
-
-    // console.log(alienService);
-    // console.log(occupationService);
-    // console.log(encounterService);
-
-    // this.encounter = new Encounter('557','Endomorph','eat eat eat','');
-    // encounterService.addEncounters({encounter: this.encounter})
-    // .then(encounter => {
-    //   console.log(encounter);
-    // });
-
-    // this.colonist = new Colonist('Mark', '3', '45');
-
-    // colonistService.newColonist(this.colonist)
-    // .then(colonist => {
-    //   console.log(colonist);
-    // });
-
-  };
+  
 }
