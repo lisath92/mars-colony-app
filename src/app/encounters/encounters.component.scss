@@ -1,6 +1,6 @@
 .encounters {
   background:
- linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+  linear-gradient(0deg, rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
   linear-gradient(to bottom right, #931621, #3B0D11, #912F56);
   display: flex;
   justify-content: flex-start;
@@ -41,23 +41,35 @@
   margin: 20px 30px;
 }
 
-.report-button button{
-  border: 5px darkorange solid;
-  border-radius: 10px;
-  background-color:lighten(#931621, 10%);
-  width: 70vw;
-  height: 20vh;
-  cursor: pointer;
-  color: white;
-  font-size: 20px;
-  margin-bottom: 30px;
-  transition: all 1s ease-in-out;
+.report-button {
+  font-size: 15px;
 
-  &:hover {
-    color: aquamarine;
-    letter-spacing: 5px;
-    font-size: 25px;
-    border-color: green;
+  a{
+    color: white;
+
+    &:hover {
+      color: aquamarine;
+    }
   }
 
+  button{
+    border: 5px darkorange solid;
+    border-radius: 10px;
+    background-color:lighten(#931621, 10%);
+    width: 60vw;
+    height: 10vh;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 30px;
+    transition: all 1s ease-in-out;
+
+    &:hover {
+      color: aquamarine;
+      letter-spacing: 5px;
+      font-size: 25px;
+      border-color: green;
+    }
+
+  }
 }

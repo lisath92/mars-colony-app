@@ -24,7 +24,7 @@ const appRoutes: Routes = [
   },
 
   {
-    path: 'post',
+    path: 'posts',
     component: PostsComponent
   }
 ];
