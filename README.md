@@ -2,30 +2,13 @@
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.10.
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+##About
+This is a single page application that emulates colonists on Mars without reloading the browser. We were provided with API keys which generate 2 lists: one of occupations colonists can choose from in the check-in view and one of aliens in the reporting an alien encounter view. This project is intended to let us familiarize ourselves with using Angular 2 as the JavaScript framework.
 
-## Code scaffolding
+##Tools and Methods Used
+Angular 2 - framework we used to generate a single page application that does not reload the browser when uses click into different views. We used the built in methods to bind data onto the HTML and generate directly onto the view from there.
+HTML5 & SCSS - to generate styles of the app
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/route/class`.
+##General Overview
+I found this to be quite challenging at first since the concept of Angular 2 is different from what we have done before. The idea was harder to grasp, but after building out the components required for this project, I found this framework to be very useful. Angular-cli allows the server to combine all the files together without extra work. In the future, I would use this framework to build out SPAs or for more complex forms.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/). 
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Deploying to Github Pages
-
-Run `ng github-pages:deploy` to deploy to Github Pages.
-
-## Further help
-
-To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
