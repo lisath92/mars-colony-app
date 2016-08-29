@@ -1,0 +1,16 @@
+<!-- This is a list of posts-->
+
+<main class="posts">
+  <section class="title">
+    <h1>4th Rock from the Sun</h1>
+  </section>
+
+  <section class="post-reports">
+    <div class="each-posts" *ngFor="let post of posts">
+      <h2><a href={{post.link}}>{{post.title.rendered}}</a>
+      </h2>
+      <p class="action" [innerHTML]="post.excerpt.rendered">
+      </p>
+    </div>
+  </section>
+</main>

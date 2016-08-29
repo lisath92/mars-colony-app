@@ -10,7 +10,8 @@ import { HomeComponent } from './app/home';
 import { ArrivalComponent } from './app/arrival';
 import { EncountersComponent } from './app/encounters';
 import { ReportComponent } from './app/report';
-import { FormsModule } from '@angular/forms'
+import { FormsModule } from '@angular/forms';
+import { PostsComponent } from './app/posts';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { FormsModule } from '@angular/forms'
     HomeComponent,
     ArrivalComponent,
     EncountersComponent,
-    ReportComponent
+    ReportComponent,
+    PostsComponent
   ],
 
   exports: [AppComponent],

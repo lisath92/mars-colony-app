@@ -32,3 +32,8 @@ export class Encounter{
       return `${date.getFullYear()}-${date.getMonth()+1}-${date.getDate()}`;
   }
 }
+
+export interface IPosts {
+  title: Object;
+  content: Object;
+}

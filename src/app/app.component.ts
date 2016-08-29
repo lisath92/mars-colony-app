@@ -5,6 +5,8 @@ import { EncounterService } from './shared/services/encounter-services';
 import { Encounter } from './models';
 import { ColonistService } from './shared/services/colonist-services';
 import { Colonist } from './models';
+import { IPosts } from './models';
+
 import { ROUTER_DIRECTIVES } from '@angular/router';
 
 

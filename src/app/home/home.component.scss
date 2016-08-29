@@ -1,11 +1,11 @@
-body{
+.home {
   background:
   -webkit-linear-gradient(top left, #451804, #c1440e, #e77d11, red);
   background:
   -o-linear-gradient(top left, #451804, #c1440e, #e77d11, red);
   background:
   linear-gradient(to bottom right, #451804, #c1440e, #e77d11, red);
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: space-around;

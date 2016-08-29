@@ -3,6 +3,7 @@ import { HomeComponent } from './home';
 import { ArrivalComponent } from './arrival';
 import { EncountersComponent } from './encounters';
 import { ReportComponent } from './report';
+import { PostsComponent } from './posts';
 
 const appRoutes: Routes = [
   {
@@ -21,6 +22,11 @@ const appRoutes: Routes = [
     path: 'report',
     component: ReportComponent
   },
+
+  {
+    path: 'post',
+    component: PostsComponent
+  }
 ];
 
 export const appRoutingProviders: any[] = [
