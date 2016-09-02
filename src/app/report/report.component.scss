@@ -82,10 +82,12 @@
 
     &::-webkit-input-placeholder{
       color: #451804;
+      font-family: 'PT Sans Narrow', sans-serif;
     }
   }
 
   button{
+    font-family: 'PT Sans Narrow', sans-serif;
     border: 5px darkorange solid;
     border-radius: 10px;
     background-color:lighten(#931621, 10%);

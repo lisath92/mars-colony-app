@@ -21,6 +21,7 @@ form {
   flex-flow: column wrap;
   width: 100%;
 
+
   label{
     margin: 20px 30px 30px;
 
@@ -51,6 +52,7 @@ form {
     }
 
     &::-webkit-input-placeholder{
+      font-family: 'PT Sans Narrow', sans-serif;
       color: #fff;
     }
   }
@@ -58,6 +60,7 @@ form {
   select {
     -webkit-appearance: none;
     margin: 20px 30px 30px;
+    font-family: 'PT Sans Narrow', sans-serif;
 
   }
 
@@ -91,6 +94,7 @@ form {
     background-color: transparent;
     color: #fff;
     cursor: pointer;
+    font-family: 'PT Sans Narrow', sans-serif;
     transition: all 1s ease-in-out;
 
     &:hover {
