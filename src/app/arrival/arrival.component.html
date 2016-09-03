@@ -3,13 +3,29 @@
   <section class="title">
     <h1>Register</h1>
   </section>
-  <form (ngSubmit)="onSubmit()" #arrivalForm="ngForm" name="arrivalForm">
-    <label><input [(ngModel)]="colonist.name" name="name" type="text" placeholder="Name" required></label>
-    <label><input [(ngModel)]="colonist.age" name="age" type="number" placeholder="Age" required></label>
-    <select [(ngModel)]="colonist.job_id" name="job_id" required>
+  <form (ngSubmit)="onSubmit()" #arrivalForm="ngForm" name="arrivalForm" [ngClass]="{'validate': false}">
+    <label><input [(ngModel)]="colonist.name" name="name" type="text" placeholder="Name" #name="ngModel" required></label>
+    <div [hidden]="name.valid || name.pristine" 
+             class="alert alert-danger">
+          Name is required
+        </div>
+
+
+    <label><input [(ngModel)]="colonist.age" name="age" type="number" placeholder="Age" #age="ngModel" required></label>
+    <div [hidden]="age.valid || age.pristine" 
+             class="alert alert-danger">
+          Age is required
+        </div>
+   
+    <select [(ngModel)]="colonist.job_id" name="job_id" #jobs="ngModel" required>
       <option value="(none)">Select occupation</option>
+       <div [hidden]="jobs.valid || jobs.pristine || noOccupation" 
+             class="alert alert-danger">
+          Occupation is required
+        </div>
       <option *ngFor="let job of occupations" [value]="job.id">{{job.name}}</option>
     </select>
+    
     <div class="arrival-check-in">
       <div class="arrival-img">
         <img src="http://cliparts.co/cliparts/6Tr/ydR/6TrydR8TK.png" alt="cute green alien">

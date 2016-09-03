@@ -23,7 +23,7 @@ export class ArrivalComponent {
   constructor(
     private router: Router,
     private colonistService: ColonistService,
-    private occupationService: OccupationService) 
+    private occupationService: OccupationService)
   {
     this.errorMessage='';
     this.colonist = new Colonist('', this.NO_OCCUPATION_SELECTED, '', '');
@@ -44,5 +44,6 @@ export class ArrivalComponent {
       this.errorMessage="Oops, something went wrong! ";
     });
   }
-
 }
+
+
