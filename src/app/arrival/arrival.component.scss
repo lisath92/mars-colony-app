@@ -43,7 +43,7 @@ form {
   }
 
   input {
-   width: 100%;
+   width: 90%;
    transition: all 0.5s ease-in-out;
 
     &:hover{
@@ -58,6 +58,7 @@ form {
   }
 
   select {
+    width: 84%;
     -webkit-appearance: none;
     margin: 20px 30px 30px;
     font-family: 'PT Sans Narrow', sans-serif;
@@ -105,15 +106,9 @@ form {
   }
 }
 
-.validate input {
-  animation: blinking 3s 2 linear;
-
-}
-
-
-@keyframes blinking {
-  50% {
-    border: 3px red solid;
-  }
+.alert {
+  font-size: 15px;
+  margin: 10px 35px;
+  
 }
 
