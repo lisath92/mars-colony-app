@@ -1,0 +1,85 @@
+.report {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), linear-gradient(to bottom right, #931621, #3B0D11, #912F56);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: column nowrap;
+  font-weight: normal;
+  height: 100vh;
+  width: 100vw; }
+  .report h1,
+  .report h3 {
+    margin-top: 20px;
+    font-size: 20px; }
+  .report h3 {
+    color: #ed8891; }
+
+.title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px; }
+  .title .subtitle {
+    margin-left: 30px; }
+
+.img {
+  width: 150px;
+  height: 150px;
+  margin-right: 30px; }
+  .img img {
+    width: 100%;
+    height: 100%; }
+
+.report-encounter {
+  width: 100%; }
+
+.encounter-form {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  margin: 20px 30px 30px; }
+  .encounter-form select {
+    width: 100%;
+    -webkit-appearance: none;
+    background-color: transparent;
+    font-size: 20px;
+    color: #fff;
+    border: 0;
+    border-bottom: 2px #f0e7e7 solid;
+    margin-bottom: 20px; }
+    .encounter-form select option {
+      color: #451804; }
+  .encounter-form textarea {
+    width: 97%;
+    height: 200px;
+    color: #451804;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px; }
+    .encounter-form textarea::-webkit-input-placeholder {
+      color: #451804;
+      font-family: 'PT Sans Narrow', sans-serif; }
+  .encounter-form button {
+    font-family: 'PT Sans Narrow', sans-serif;
+    border: 5px darkorange solid;
+    border-radius: 10px;
+    background-color: #bf1d2b;
+    width: 90vw;
+    height: 20vh;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    margin: 30px 0;
+    transition: all 1s ease-in-out; }
+    .encounter-form button:hover {
+      color: aquamarine;
+      border-radius: 10px;
+      letter-spacing: 5px;
+      font-size: 30px;
+      border-color: green; }
+
+.alert {
+  font-size: 15px;
+  margin-right: auto; }

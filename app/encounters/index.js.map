@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["file:///C:/Users/lisa_/Documents/RED/projects/mars-colony-app-2/tmp/broccoli_type_script_compiler-input_base_path-nGwWVliH.tmp/0/src/app/encounters/index.ts"],"names":[],"mappings":";;;;AAAA,iBAAc,wBAAwB,CAAC,EAAA","sourcesContent":["export * from './encounters.component';\n"]}

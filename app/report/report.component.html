@@ -1,0 +1,30 @@
+<!-- This is view to report an encounter -->
+
+<main class="report">
+  <section class="title">
+  <div class="subtitle">
+    <h1>Report Encounter</h1>
+    <h3>Safety on Mars is your responsibility</h3>
+    </div>
+    <div class="img">
+      <img src="http://i335.photobucket.com/albums/m474/kay_an_09/alien/cutealien.gif" alt="cute green alien saying hi">
+    </div>
+  </section>
+  <section class="report-encounter">
+    <form class="encounter-form" name="reportForm" (ngSubmit)="onSubmit()" #reportForm="ngForm">
+      <select required [(ngModel)]="encounter.atype" name="atype">
+        <option value="(none)" disabled>Select an alien type</option>
+        <option *ngFor="let alien of aliens" [value]="alien.type" >{{alien.type}}</option>
+      </select>
+      <textarea col="200px" placeholder="Action taken" required [(ngModel)]="encounter.action" name="action" #action="ngModel">
+      </textarea>
+      <div [hidden]="action.valid || action.pristine" 
+    class="alert">
+    Description is required
+  </div>
+      <button [disabled]="noAlienSelected || !reportForm.form.valid" type="submit">Submit Report</button>
+    </form>
+  </section>
+
+  {{errorMessage}}
+</main>

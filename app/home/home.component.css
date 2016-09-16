@@ -1,0 +1,42 @@
+.home {
+  background: -webkit-linear-gradient(top left, #451804, #c1440e, #e77d11, red);
+  background: -o-linear-gradient(top left, #451804, #c1440e, #e77d11, red);
+  background: linear-gradient(to bottom right, #451804, #c1440e, #e77d11, red);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: column nowrap; }
+
+.button {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("./mars.png") center 0px/200px no-repeat;
+  animation: rotate 3s infinite linear; }
+  .button button {
+    animation: 1s ease-in-out pulse infinite;
+    border: 0;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    cursor: pointer; }
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg); }
+  100% {
+    transform: rotateY(360deg); } }
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 20px 2px rgba(255, 255, 255, 0.1), 0 0 0 6px rgba(255, 255, 255, 0.1), 0 0 0 2px rgba(255, 255, 255, 0.15); }
+  50% {
+    box-shadow: 10px 10px 20px 4px rgba(255, 255, 255, 0.1), 0 0 10 6px rgba(255, 255, 255, 0.05), 0 0 0 4px rgba(255, 255, 255, 0.2); }
+  100% {
+    box-shadow: 0 0 0px 30px rgba(255, 255, 255, 0.1), 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 0 10px rgba(255, 255, 255, 0.1); } }

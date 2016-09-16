@@ -1,0 +1,77 @@
+.arrival {
+  background: linear-gradient(to top left, #451804, #c1440e);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: column nowrap;
+  align-items: center;
+  color: #fff; }
+  .arrival h1 {
+    margin: 20px; }
+
+form {
+  display: flex;
+  align-content: center;
+  flex-flow: column wrap;
+  width: 100%; }
+  form label {
+    margin: 20px 30px 30px; }
+  form select,
+  form input {
+    text-indent: 10px;
+    color: #fff;
+    background-color: transparent;
+    font-size: 23px;
+    border: 0;
+    border-bottom: 2px #f0e7e7 solid;
+    padding: 10px; }
+    form select:focus,
+    form input:focus {
+      border-color: green; }
+  form input {
+    width: 90%;
+    transition: all 0.5s ease-in-out; }
+    form input:hover {
+      padding: 15px;
+      letter-spacing: 5px; }
+    form input::-webkit-input-placeholder {
+      font-family: 'PT Sans Narrow', sans-serif;
+      color: #fff; }
+  form select {
+    width: 84%;
+    -webkit-appearance: none;
+    margin: 20px 30px 30px;
+    font-family: 'PT Sans Narrow', sans-serif; }
+  form option {
+    color: #451804; }
+  form .arrival-check-in {
+    display: flex;
+    justify-content: flex-start; }
+  form .arrival-img {
+    width: 150px;
+    height: 200px;
+    transition: all 1s ease-in-out; }
+    form .arrival-img:hover {
+      transform: rotateY(360deg); }
+    form .arrival-img img {
+      width: 100%;
+      height: 100%; }
+  form button {
+    align-self: flex-start;
+    margin-top: 80px;
+    border: none;
+    font-size: 25px;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'PT Sans Narrow', sans-serif;
+    transition: all 1s ease-in-out; }
+    form button:hover {
+      color: aquamarine;
+      font-size: 28px;
+      letter-spacing: 5px; }
+
+.alert {
+  font-size: 15px;
+  margin: 10px 35px; }

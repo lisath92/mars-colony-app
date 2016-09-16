@@ -1,0 +1,23 @@
+<!-- This is the list of encounters view -->
+
+<main class="encounters">
+  <section class="title">
+    <h1>Recent Encounters</h1>
+    <h3>See an Alien? Report it!</h3>
+  </section>
+
+  <section class="encounter-reports">
+    <div class="list-reports" *ngFor="let encounter of encounters">
+      <p class="date-alien">{{encounter.date}} - {{encounter.atype}}</p>
+      <p class="action">{{encounter.action}}</p>
+    </div>
+  </section>
+  <section class="report-button">
+  <button [routerLink]="['/report']">Report an Encounter!</button>
+  <a [routerLink]="['/posts']"><h3>Or go to the blogs page!</h3></a>
+  </section>
+
+
+</main>
+
+
